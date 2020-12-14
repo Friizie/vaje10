@@ -19,3 +19,11 @@ def gen_file():
 
 gen_file()
 # ----------------------------------------------------------------------------------------------------------------------
+#Kliment Markoski
+
+def print_file(f):
+    file= open(f,'r')       #opens a file and prints to terminal
+    for line in file:
+        print(line)
+
+print_file("randstrings.txt")
