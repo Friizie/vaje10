@@ -9,15 +9,15 @@ def get_random_string(length):
     return result_str
 
 
-def gen_file():
-    f = open("randstrings.txt", "w+")
-    for i in range(10):
-        f.write(get_random_string(10))                  # writing {number} of random chars to a file
+def gen_file(file_name,line_length,letter_length):                 # example {"file.txt",10,10}
+    f = open(file_name, "w+")
+    for i in range(line_length):
+        f.write(get_random_string(letter_length))                  # writing {number} of random chars to a file
         f.write("\n")
     f.close()
 
 
-gen_file()
+gen_file("randstrings.txt",10,10)
 # ----------------------------------------------------------------------------------------------------------------------
 #Kliment Markoski
 
